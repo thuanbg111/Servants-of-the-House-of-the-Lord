@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Servants of the House of the Lord</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Servants of the House of the Lord — About. EIN 87-2999793.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Servants of the House of the Lord logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container split">
+  <div>
+    <h1>About Servants of the House of the Lord</h1>
+    <p><strong>Servants of the House of the Lord</strong> is organized under California’s Nonprofit Public Benefit Corporation Law and operates for charitable purposes as a recognized <strong>501(c)(3)</strong> nonprofit with EIN <strong>87-2999793</strong>.</p>
+    <p><em>Specific purpose:</em> support the new evangelization efforts of the Catholic Church.</p>
+    <ul class="small">
+      <li>No substantial part of our activities involves lobbying or political campaigning.</li>
+      <li>Assets are irrevocably dedicated to charitable and religious purposes.</li>
+      <li>Upon dissolution, remaining assets go to a similar 501(c)(3).</li>
+    </ul>
+  </div>
+  <figure class="figure"><img src="images/about.jpg" alt="About our mission"></figure>
+</main>
+
+<section class="section container grid-3">
+  <div class="card"><div class="card-body">
+    <strong>Address</strong>
+    <p class="small">1055 N Darfield Avenue, Covina, CA 91724</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Focus Areas</strong>
+    <p class="small">Evangelization • Formation • Charity</p>
+  </div></div>
+  <div class="card"><div class="card-body">
+    <strong>Tax ID (EIN)</strong>
+    <p class="small">87-2999793</p>
+  </div></div>
+</section>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Servants of the House of the Lord</div>
+      <div class="small">A California Nonprofit Public Benefit Corporation (501(c)(3)) • EIN 87-2999793</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Support the new evangelization efforts of the catholic church.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>1055 N Darfield Avenue<br>Covina, CA 91724<br>
+        <strong>Email:</strong> <a href="mailto:contact@servantsthehousethelord.online">contact@servantsthehousethelord.online</a><br>
+        <strong>Phone:</strong> <a href="tel:+15714256242">+1 571 425 6242</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
